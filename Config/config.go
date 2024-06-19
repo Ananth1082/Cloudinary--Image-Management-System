@@ -1,11 +1,13 @@
 package config
 
 import (
-	"ImageManagement/m-v0/Utils"
+	utils "ImageManagement/m-v0/Utils"
 	"context"
 
 	"github.com/cloudinary/cloudinary-go/v2"
 )
+
+const Root = "Fisheries App" //root folder name
 
 func Credentials() (*cloudinary.Cloudinary, context.Context) {
 	// Add your Cloudinary credentials, set configuration parameter
